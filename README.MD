@@ -1,4 +1,4 @@
-[![Watch the video](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifePicture.jpg)](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifeVideo.mp4)
+[![Watch the video](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifePicture.png)](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifeVideo.mp4)
 
 
 This program is a learning program to see if I could use React to display my game of life program.
