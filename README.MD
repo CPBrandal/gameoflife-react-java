@@ -1,7 +1,4 @@
-<video width="600" controls>
-  <source src="assets/gameoflifeVideo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifePicture.jpg)](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/main/assets/gameoflifeVideo.mp4)
 
 
 This program is a learning program to see if I could use React to display my game of life program.
