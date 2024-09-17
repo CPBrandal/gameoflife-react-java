@@ -12,7 +12,7 @@
 }
 
 .square {
-    border: 1px solid #cccccc73;
+    border: 1px solid #ffffffa2;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
 }
@@ -60,7 +60,6 @@
     font-size: 16px;            /* Font size */
     margin: 0 5px;              /* Margin between buttons */
     cursor: pointer;            /* Pointer cursor on hover */
-    border-radius: 5px;         /* Rounded corners */
     transition: background-color 0.3s; /* Smooth background color transition */
 }
 
