@@ -1,3 +1,9 @@
+<video width="600" controls>
+  <source src="assets/gameoflifeVideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 This program is a learning program to see if I could use React to display my game of life program.
 The program is not very fast or efficient, and is only ment as a way of learning React, and how to create my own API which the frontend can communicate with.
 
