@@ -1,6 +1,9 @@
 [![Watch the video](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/master/assets/gameoflifePicture.png)](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/master/assets/gameoflifeVideo.mp4)
 
 
+![Example GIF](https://raw.githubusercontent.com/CPBrandal/gameoflife-react-java/master/assets/golgif.gif)
+
+
 This program is a learning program to see if I could use React to display my game of life program.
 The program is not very fast or efficient, and is only ment as a way of learning React, and how to create my own API which the frontend can communicate with.
 
