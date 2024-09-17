@@ -19,6 +19,7 @@ public class GameController {
 
     @GetMapping("/state")
     public Verden getGameState() {
+        gameService.initializeVerden(10, 10);
         gameService.updateVerden();
         return gameService.getVerden();
     }
