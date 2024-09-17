@@ -13,14 +13,11 @@ public class GameController {
 
     @PostMapping("/initialize")
     public void initializeGame(@RequestBody int[] dimensions) {
-        // You can use dimensions here if needed
         gameService.initializeVerden(dimensions[0], dimensions[1]);
     }   
 
     @GetMapping("/state")
     public Verden getGameState() {
-        gameService.initializeVerden(10, 10);
-        gameService.updateVerden();
         return gameService.getVerden();
     }
 

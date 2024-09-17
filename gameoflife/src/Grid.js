@@ -4,12 +4,11 @@ import './Grid.css';
 const Grid = () => {
     const [grid, setGrid] = useState([]);
     const [gen, setGen] = useState(0);
-    const [speed, setSpeed] = useState(150); // Default speed in milliseconds
-    const [isRunning, setIsRunning] = useState(false); // State to track if updates are running
-    const intervalId = useRef(null); // Use useRef to track the interval
+    const [speed, setSpeed] = useState(150);
+    const [isRunning, setIsRunning] = useState(false);
+    const intervalId = useRef(null);
 
     useEffect(() => {
-        // Initialize the grid
         fetch('http://localhost:8080/api/game/initialize', {
             method: 'POST',
             headers: {
@@ -20,7 +19,6 @@ const Grid = () => {
             fetchGridState();
         });
 
-        // Clean up the interval when the component unmounts
         return () => clearInterval(intervalId.current);
     }, []);
 
@@ -49,19 +47,19 @@ const Grid = () => {
 
     // Function to start the interval
     const startUpdates = (intervalSpeed) => {
-        stopUpdates(); // Ensure any existing interval is cleared
+        stopUpdates();
         intervalId.current = setInterval(() => {
             fetchGridUpdate();
         }, intervalSpeed);
-        setIsRunning(true); // Set isRunning to true when updates start
+        setIsRunning(true);
     };
 
     // Function to stop the interval
     const stopUpdates = () => {
         if (intervalId.current) {
             clearInterval(intervalId.current);
-            intervalId.current = null; // Clear the interval ID
-            setIsRunning(false); // Set isRunning to false when updates stop
+            intervalId.current = null;
+            setIsRunning(false); 
         }
     };
 
@@ -70,7 +68,6 @@ const Grid = () => {
         const newSpeed = event.target.value;
         setSpeed(newSpeed);
 
-        // If the interval is running, restart it with the new speed
         if (isRunning) {
             startUpdates(newSpeed);
         }
