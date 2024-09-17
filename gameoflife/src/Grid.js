@@ -14,7 +14,7 @@ const Grid = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify([50, 50]),
+            body: JSON.stringify([50, 50])
         }).then(() => {
             fetchGridState();
         });
